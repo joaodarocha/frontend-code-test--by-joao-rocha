@@ -1,27 +1,83 @@
-# FrontendCodeTestByJoaoRocha
+# Frontend Technical Test
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.8.
+## Made with 💚 by [João Rocha](mailto:joaorocha@gmail.com)
 
-## Development server
+### ✅ Acceptance Criteria
+We have a high focus on attention to details in code
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+* The formatting of the codebase should be consistent and written in a modular approach
+* The solution should be structured appropriately for enterprise scale development
+* We expect the data from the two API calls to be retrieved and merged efficiently using appropriate RxJS operators
+* We expect the codebase to be written using ES6+ and libraries kept to a minimum
+* We expect the code to be written with performance in mind
+* We expect you to create an appropriate level of automated test coverage
+* We expect to see a best practice approach to error handling
+* We prefer native Browser Api over JS libraries
+* Mobile-first development approach using min-width media queries
+* Solution should be accessible and meet WCAG 2.1
+* No CSS framework allowed
+* Internally, we use BEM - but we are open to other CSS naming conventions as long as it's built with scale and maintenance in mind
 
-## Code scaffolding
+We have a high focus on attention to details in design
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* We expect the designs to match as closely as possible, ready for a designer to review
+* Correct semantic HTML mark-up and/or CSS should be used to achieve the size and aspect ratio of the images in the design
+* Interactions and animations to be considered but not distracting users away from the experience
+* Minimal visual bugs when going resizing to mobile and large screen sizes
 
-## Build
+### 🖼️  Designs
+#### Mobile breakpoint (<600px)
+![alt text](src/assets/designs/mobile.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### 🎥 Video review 🍿
+### [Click here to see the Video Review]([LINK_TO_LOOM_VIDEO]) 
 
-## Running unit tests
+## ✍️ Proposed Solution
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- we can achieve the desired designs by breaking them in the following components:
+  - CardComponent
+  - CardListComponent
+- CardService: to fetch data from the API 
 
-## Running end-to-end tests
+*TODO: [ADD_SOLUTION_DESCRIPTION]*
+- [other steps here]
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### ➡️ [Click here to see the Live Demo]([LINK_TO_THE_DEPLOYED_APP]) ⬅️
 
-## Further help
+## 📷 Screenshots
+![alt text](assets/app_screen.png)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Assumptions
+
+*TODO: [ASSUMPTIONS_MADE_HERE]*
+
+## 📚 Libraries / Tools Used 🔧
+
+- Angular v17
+- Angular CLI to create a new app 
+- RxJS operators
+
+## 💻 Setup
+
+To install the dependencies run:
+
+`npm install`
+
+And to run the app:
+
+`npm start`
+
+
+## 🧪 Running the tests
+
+You can run the unit tests using:
+
+`npm test`
+
+
+## 📈 Future Work
+
+1. Complete test coverage to achieve 90%
+2. Improve styling and responsive design
+3. Test for perfomance and consider setting up a CDN
+   ...
