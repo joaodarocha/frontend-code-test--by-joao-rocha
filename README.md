@@ -26,8 +26,8 @@ We have a high focus on attention to details in design
 * Minimal visual bugs when going resizing to mobile and large screen sizes
 
 ## 🎥 Video review 🍿
-![Loom video](src/assets/screenshots/loom-video.png)
-### ➡️ [Click here to see the Video Review]([LINK_TO_LOOM_VIDEO]) ⬅️ 
+![Explanation video](src/assets/screenshots/explanation-video.png)
+### ➡️ [Click here to open the Video ](https://www.loom.com/share/0b98d7768e544015913b415fa1a179be) ⬅️ 
 
 ## ✍️ Proposed Solution
 
@@ -40,9 +40,10 @@ We have a high focus on attention to details in design
     - `VehicleService`: is responsible for fetching data from the API, by making HTTP requests
 
 
-### ➡️ [Click here to see the Live Demo](https://frontend-code-by-joao-rocha.netlify.app/) ⬅️
+
 
 ## 📷 Screenshots
+### ➡️ [Open the app deployed on Netlify](https://frontend-code-by-joao-rocha.netlify.app/) ⬅️
 ### Mobile (375px)
 ![Mobile breakpoint](src/assets/screenshots/mobile-375px.png)
 

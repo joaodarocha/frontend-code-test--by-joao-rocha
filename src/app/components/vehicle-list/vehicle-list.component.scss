@@ -8,11 +8,6 @@
   &__container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-
-    @include breakpoint-lg {
-      max-width: 1024px;
-    }
-
   }
 
 }
