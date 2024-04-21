@@ -27,7 +27,7 @@ We have a high focus on attention to details in design
 
 ### 🖼️  Designs
 #### Mobile breakpoint (<600px)
-![alt text](src/assets/designs/mobile.png)
+![Mobile Design](src/assets/designs/mobile.png)
 
 ### 🎥 Video review 🍿
 ### [Click here to see the Video Review]([LINK_TO_LOOM_VIDEO]) 
@@ -63,7 +63,7 @@ To install the dependencies run:
 
 `npm install`
 
-And to run the app:
+To run the app:
 
 `npm start`
 
@@ -79,5 +79,5 @@ You can run the unit tests using:
 
 1. Complete test coverage to achieve 90%
 2. Improve styling and responsive design
-3. Test for perfomance and consider setting up a CDN
+3. Test for performance and consider setting up a CDN
    ...
