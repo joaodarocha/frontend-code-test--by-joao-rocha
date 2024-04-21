@@ -34,9 +34,13 @@ We have a high focus on attention to details in design
 
 ## ✍️ Proposed Solution
 
-- we can achieve the desired designs by breaking them in the following components:
-  - CardComponent
-  - CardListComponent
+- We can achieve the desired designs by breaking them in the following elements:
+  - Components:
+    - `HomePageComponent`
+    - `VehicleListComponent`
+    - `VehicleComponent`
+  - Services:
+    - `VehicleService`
 - CardService: to fetch data from the API 
 
 *TODO: [ADD_SOLUTION_DESCRIPTION]*
