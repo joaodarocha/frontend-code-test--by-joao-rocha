@@ -36,52 +36,73 @@ We have a high focus on attention to details in design
 
 - We can achieve the desired designs by breaking them in the following elements:
   - Components:
-    - `HomePageComponent`
-    - `VehicleListComponent`
-    - `VehicleComponent`
+    - `HomePageComponent`: renders the home page `/`
+    - `VehicleListComponent`: is responsible for showing a list of `Vehicles`
+    - `VehicleComponent`: is responsible for showing a single `Vehicle`
   - Services:
-    - `VehicleService`
-- CardService: to fetch data from the API 
+    - `VehicleService`: is responsible for fetching data from the API, by making HTTP requests
 
-*TODO: [ADD_SOLUTION_DESCRIPTION]*
-- [other steps here]
 
-### ➡️ [Click here to see the Live Demo]([LINK_TO_THE_DEPLOYED_APP]) ⬅️
+### ➡️ [Click here to see the Live Demo](https://frontend-code-by-joao-rocha.netlify.app/) ⬅️
 
 ## 📷 Screenshots
-![alt text](assets/app_screen.png)
+### Mobile (375px)
+![Mobile breakpoint](src/assets/screenshots/mobile-375px.png)
+
+### Tablet (768px)
+![Tablet breakpoint](src/assets/screenshots/tablet-768px.png)
+
+### Desktop (375px)
+![Desktop breakpoint](src/assets/screenshots/desktop-1024px.png)
 
 ## Assumptions
 
-*TODO: [ASSUMPTIONS_MADE_HERE]*
+* Getting vehicle `problematic` should not break the app
+* If we have an error fetching a vehicle (e.g.: `problematic`) we should remove it from `vehicles[]`, and not show it 
 
 ## 📚 Libraries / Tools Used 🔧
 
 - Angular v17
 - Angular CLI to create a new app 
 - RxJS operators
+- Prettier
 
 ## 💻 Setup
 
 To install the dependencies run:
 
-`npm install`
+```shell
+npm install
+```
 
 To run the app:
 
-`npm start`
+```shell
+npm start
+```
 
 
 ## 🧪 Running the tests
 
 You can run the unit tests using:
+```shell
+npm run test:coverage
+```
 
-`npm test`
+### Test coverage:
+```shell
+=============================== Coverage summary ===============================
+Statements   : 94.59% ( 35/37 )
+Branches     : 71.42% ( 5/7 )
+Functions    : 94.44% ( 17/18 )
+Lines        : 94.44% ( 34/36 )
+================================================================================
+```
 
 
 ## 📈 Future Work
 
 1. Complete test coverage to achieve 90%
-2. Improve styling and responsive design
-3. Test for performance and consider setting up a CDN
-   ...
+2. Improve styling
+3. Improve performance in Mobile
+   
