@@ -52,7 +52,7 @@ We have a high focus on attention to details in design
 ### Tablet (768px)
 ![Tablet breakpoint](src/assets/screenshots/tablet-768px.png)
 
-### Desktop (375px)
+### Desktop (1024px)
 ![Desktop breakpoint](src/assets/screenshots/desktop-1024px.png)
 
 ## 🔎 Lighthouse reports
@@ -110,7 +110,8 @@ Lines        : 94.44% ( 34/36 )
 
 ## 📈 Future Work
 
-1. Complete test coverage to achieve 90%
+1. Fix image size and position in mobile breakpoint
+2. Complete test coverage to achieve 90%
 2. Improve styling and stylesheets organization (consider using [ITSCSS](https://developer.helpscout.com/seed/glossary/itcss/))
 3. Improve performance in Mobile to be at least 80
    
