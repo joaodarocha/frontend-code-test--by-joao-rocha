@@ -55,7 +55,7 @@ We have a high focus on attention to details in design
 ### Desktop (375px)
 ![Desktop breakpoint](src/assets/screenshots/desktop-1024px.png)
 
-## Lighthouse reports
+## 🔎 Lighthouse reports
 ### Mobile
 ![Mobile](src/assets/screenshots/lighthouse-report--mobile.png)
 
