@@ -55,10 +55,18 @@ We have a high focus on attention to details in design
 ### Desktop (375px)
 ![Desktop breakpoint](src/assets/screenshots/desktop-1024px.png)
 
+## Lighthouse reports
+### Mobile
+![Mobile](src/assets/screenshots/lighthouse-report--mobile.png)
+
+### Desktop
+![Desktop](src/assets/screenshots/lighthouse-report--desktop.png)
+
 ## Assumptions
 
 * Getting vehicle `problematic` should not break the app
 * If we have an error fetching a vehicle (e.g.: `problematic`) we should remove it from `vehicles[]`, and not show it 
+* We want to use the smaller image (1x1) in breakpoint SM, and use the bigger image (16x9) in breakpoints MD and LG 
 
 ## 📚 Libraries / Tools Used 🔧
 
