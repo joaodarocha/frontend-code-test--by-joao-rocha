@@ -1,0 +1,9 @@
+<div *ngIf="vehicles" class="vehicle-list">
+  <h1 class="vehicle-list__heading">Vehicle List</h1>
+  <div class="vehicle-list__container">
+    <app-vehicle
+      *ngFor="let vehicle of vehicles"
+      [vehicleDetails]="vehicle"
+    ></app-vehicle>
+  </div>
+</div>

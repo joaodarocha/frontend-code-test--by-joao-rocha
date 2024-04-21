@@ -1,0 +1,6 @@
+<div
+  *ngIf="vehiclesWithDetails$ | async as vehicles"
+  class="home-page page-container"
+>
+  <app-vehicle-list [vehicles]="vehicles"></app-vehicle-list>
+</div>

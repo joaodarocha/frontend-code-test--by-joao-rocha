@@ -1,3 +1,5 @@
+import { Media } from './media.model';
+
 export interface Vehicle {
   id: string;
   name: string;
@@ -6,16 +8,10 @@ export interface Vehicle {
   media: Media[];
 }
 
-export interface Media {
-  name: string;
-  url: string;
-}
-
-export interface VehicleDetails {
-  id: string;
-  description: string;
-  price: string;
-  meta: MetaVehicleData;
+export interface VehicleWithDetails extends Vehicle {
+  description?: string;
+  price?: string;
+  meta?: MetaVehicleData;
 }
 
 export interface MetaVehicleData {
@@ -25,5 +21,5 @@ export interface MetaVehicleData {
   emissions: {
     template: string;
     value: number;
-  }
+  };
 }

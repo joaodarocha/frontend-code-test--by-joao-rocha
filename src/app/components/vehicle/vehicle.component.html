@@ -1,0 +1,46 @@
+<div *ngIf="vehicleDetails" class="vehicle">
+  <div class="vehicle__container">
+    <picture class="vehicle__image-container">
+      <source
+        media="(max-width: 599px)"
+        srcset="{{'assets' + vehicleDetails.media[1].url}}"
+        width="470"
+        height="470"
+      />
+      <source
+        media="(min-width: 600px)"
+        srcset="{{'assets' + vehicleDetails.media[1].url}}"
+        width="470"
+        height="470"
+      />
+      <source
+        media="(min-width: 1024px)"
+        srcset="{{'assets' + vehicleDetails.media[0].url}}"
+        width="470"
+        height="246"
+      />
+      <img
+        class="vehicle__image"
+        ngSrc="{{ 'assets' + vehicleDetails.media[0].url }}"
+        width="470"
+        height="470"
+        [alt]="vehicleDetails.name"
+      />
+    </picture>
+    <div class="vehicle__content">
+      <h2 *ngIf="vehicleDetails.name" class="vehicle__heading">
+        {{ vehicleDetails.name }}
+      </h2>
+      <h3 class="vehicle__sub-heading">
+        {{
+          vehicleDetails.price
+            ? "From " + vehicleDetails.price
+            : "Estimate only"
+        }}
+      </h3>
+      <p *ngIf="vehicleDetails.description" class="vehicle__description">
+        {{ vehicleDetails.description }}
+      </p>
+    </div>
+  </div>
+</div>
