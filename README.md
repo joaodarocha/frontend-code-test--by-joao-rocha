@@ -27,7 +27,7 @@ We have a high focus on attention to details in design
 
 ## 🎥 Video review 🍿
 ![Explanation video](src/assets/screenshots/explanation-video.png)
-### ➡️ [Click here to open the Video ](https://www.loom.com/share/0b98d7768e544015913b415fa1a179be) ⬅️ 
+### ➡️ [Click here to open the Video ](https://www.loom.com/share/90196e0e687b4c8daba0d3b469ffb2fe) ⬅️ 
 
 ## ✍️ Proposed Solution
 
