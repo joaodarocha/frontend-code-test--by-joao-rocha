@@ -111,6 +111,6 @@ Lines        : 94.44% ( 34/36 )
 ## 📈 Future Work
 
 1. Complete test coverage to achieve 90%
-2. Improve styling and stylesheets organization (consider using ITSCSS)
+2. Improve styling and stylesheets organization (consider using [ITSCSS](https://developer.helpscout.com/seed/glossary/itcss/))
 3. Improve performance in Mobile to be at least 80
    
