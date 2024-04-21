@@ -25,12 +25,9 @@ We have a high focus on attention to details in design
 * Interactions and animations to be considered but not distracting users away from the experience
 * Minimal visual bugs when going resizing to mobile and large screen sizes
 
-### 🖼️  Designs
-#### Mobile breakpoint (<600px)
-![Mobile Design](src/assets/designs/mobile.png)
-
-### 🎥 Video review 🍿
-### [Click here to see the Video Review]([LINK_TO_LOOM_VIDEO]) 
+## 🎥 Video review 🍿
+![Loom video](src/assets/screenshots/loom-video.png)
+### ➡️ [Click here to see the Video Review]([LINK_TO_LOOM_VIDEO]) ⬅️ 
 
 ## ✍️ Proposed Solution
 
