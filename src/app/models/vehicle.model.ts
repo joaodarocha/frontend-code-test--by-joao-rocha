@@ -8,7 +8,9 @@ export interface Vehicle {
   media: Media[];
 }
 
-export interface VehicleWithDetails extends Vehicle {
+export type VehicleWithDetails = Vehicle & VehicleDetails;
+
+export interface VehicleDetails {
   description?: string;
   price?: string;
   meta?: MetaVehicleData;

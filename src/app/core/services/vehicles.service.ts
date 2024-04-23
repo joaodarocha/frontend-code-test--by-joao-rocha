@@ -2,7 +2,11 @@ import { Injectable } from '@angular/core';
 import { ServiceBaseService } from '../../bases/services/service-base.service';
 import { HttpClient } from '@angular/common/http';
 import { catchError, concatMap, forkJoin, map, Observable, of } from 'rxjs';
-import { Vehicle, VehicleWithDetails } from '../../models/vehicle.model';
+import {
+  Vehicle,
+  VehicleDetails,
+  VehicleWithDetails,
+} from '../../models/vehicle.model';
 
 @Injectable({
   providedIn: 'root',
@@ -16,7 +20,7 @@ export class VehiclesService extends ServiceBaseService {
     return this.get();
   }
 
-  getVehicleDetailsById(id: string): Observable<VehicleWithDetails> {
+  getVehicleDetailsById(id: string): Observable<VehicleDetails> {
     return this.get(id);
   }
 
@@ -25,23 +29,20 @@ export class VehiclesService extends ServiceBaseService {
       concatMap((vehicles) =>
         // For each vehicle, make parallel API calls for details
         forkJoin(
-          vehicles.map((vehicle) =>
+          vehicles.map((vehicle, index) =>
             // Make an API call for each vehicle using its 'id'
             this.getVehicleDetailsById(vehicle.id).pipe(
+              map((details) => {
+                return { ...vehicle, ...details }; // returns vehicle with details
+              }),
               catchError((error) => {
                 console.error(
                   `Error fetching details for vehicle ${vehicle.id}:\n`,
                   error,
                 );
                 // Return null if there's an error
-                return of(null);
+                return of(vehicle);
               }),
-            ),
-          ),
-        ).pipe(
-          map((details) =>
-            this.mergeData(vehicles, details).filter(
-              (vehicle) => vehicle !== null,
             ),
           ),
         ),
@@ -49,19 +50,17 @@ export class VehiclesService extends ServiceBaseService {
     );
   }
 
-  mergeData(
+  /*  mergeData(
     vehicles: Vehicle[],
-    details: (VehicleWithDetails | null)[],
+    details: VehicleDetails[],
   ): VehicleWithDetails[] {
     // Merge the data as needed, for example, by adding details to each vehicle
-    return vehicles
-      .map((vehicle, index) => {
-        // Ignore vehicles with null details
-        if (details[index] === null) {
-          return {} as VehicleWithDetails;
-        }
-        return { ...vehicle, ...details[index] };
-      })
-      .filter((vehicle) => !!vehicle.id);
-  }
+    return vehicles.map((vehicle, index) => {
+      // Ignore vehicles with null details
+      if (details[index] === null) {
+        return {} as VehicleWithDetails;
+      }
+      return { ...vehicle, ...details[index] };
+    });
+  }*/
 }

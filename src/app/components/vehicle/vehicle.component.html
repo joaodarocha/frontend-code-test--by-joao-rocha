@@ -3,21 +3,15 @@
     <picture class="vehicle__image-container">
       <source
         media="(max-width: 599px)"
-        srcset="{{'assets' + vehicleDetails.media[1].url}}"
-        width="470"
-        height="470"
+        srcset="{{'assets' + vehicleDetails.media[1].url}}=470w"
       />
       <source
         media="(min-width: 600px)"
-        srcset="{{'assets' + vehicleDetails.media[0].url}}"
-        width="470"
-        height="470"
+        srcset="{{'assets' + vehicleDetails.media[0].url}}=470w"
       />
       <source
         media="(min-width: 1024px)"
-        srcset="{{'assets' + vehicleDetails.media[0].url}}"
-        width="470"
-        height="246"
+        srcset="{{'assets' + vehicleDetails.media[0].url}}=470w"
       />
       <img
         class="vehicle__image"
